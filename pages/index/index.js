@@ -4,10 +4,13 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
+    motto: 'Hello World From Jerome',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
+  },
+  onPullDownRefresh: function () {
+    console.log(Page.prototype + '||' + new Date)
   },
   //事件处理函数
   bindViewTap: function() {
